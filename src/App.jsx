@@ -1,26 +1,42 @@
 function App() {
-    return(
-        <div>
-            <header>
-                <h1>Cute Dog Images</h1>
-            </header>
-            <main>
-                <section>
-                    <figure>
-                        <img 
-                            src="https://images.dog.ceo/breeds/shiba/shiba-8.jpg"
-                            alt="cute dog"
+    return (
+      <div>
+        <header className="hero is-dark is-bold">
+          <div className="hero-body">
+            <div className="container">
+              <h1>Cute Dog Images</h1>
+            </div>
+          </div>
+        </header>
+        <main>
+          <section className="section">
+            <div className="container">
+              <div className="column is-vcenterd is-multiline">
+                <div className="column is-3">
+                  <div className="card">
+                    <div className="card-image">
+                      <figure className="image">
+                        <img
+                          src="https://images.dog.ceo/breeds/shiba/shiba-8.jpg"
+                          alt="cute dog"
                         />
-                    </figure>
-                </section>
-            </main>
-            <footer>
-                <p>Dog images are retrived from Dog API</p>
-                <p>
-                    <a href="https://dog.ceo/dog-api/about">Donate to Dog API</a>
-                </p>
-            </footer>
-        </div>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer className="footer">
+          <div className="content has-text-centered">
+            <p>Dog images are retrived from Dog API</p>
+            <p>
+              <a href="https://dog.ceo/dog-api/about">Donate to Dog API</a>
+            </p>
+          </div>
+        </footer>
+      </div>
     );
 }
 
