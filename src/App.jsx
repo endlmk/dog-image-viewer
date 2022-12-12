@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { fetchImages } from "./api";
 
 function App() {
@@ -24,10 +24,10 @@ function Header() {
 }
 
 function Main() {
-  const urls = null;
+  const [urls, setUrls] = useState(null);
   useEffect(() => {
     fetchImages("shiba").then((urls) => {
-      console.log(urls);
+      setUrls(urls);
     });
   }, []);
   return (
