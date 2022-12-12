@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import { fetchImages } from "./api";
+
 function App() {
   return (
     <div>
@@ -22,6 +25,11 @@ function Header() {
 
 function Main() {
   const urls = null;
+  useEffect(() => {
+    fetchImages("shiba").then((urls) => {
+      console.log(urls);
+    });
+  }, []);
   return (
     <main>
       <section className="section">
