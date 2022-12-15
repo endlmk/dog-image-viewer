@@ -1,3 +1,5 @@
+import "bulma/css/bulma.css";
+
 import { useEffect, useState } from "react";
 import { fetchImages } from "./api";
 
